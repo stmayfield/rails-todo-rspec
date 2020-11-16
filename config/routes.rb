@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # root to: controller#action
   root to: 'todos#index'
+
+  # resources :controller, only: ':new' (method/action from controller) 
+  resources :todos, only: [:index, :new, :create]
 end

@@ -1,0 +1,7 @@
+<%# form_for(record, options = {}, &block) %>
+
+<%= form_for @todo do |f| %>
+  <%= f.label :title %><br/>
+  <%= f.text_field :title %>
+  <%= f.submit "Submit" %>
+<% end %>
