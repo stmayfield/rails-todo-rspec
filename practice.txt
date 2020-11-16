@@ -1,0 +1,3 @@
+rails new todos -T 
+
+-T skip test unit (using Rspec)
