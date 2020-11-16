@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   # resources :controller, only: ':new' (method/action from controller) 
   resources :todos, only: [:index, :new, :create]
+
+  resource :session, only: [:new, :create]
 end
