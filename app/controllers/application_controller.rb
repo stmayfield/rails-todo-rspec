@@ -10,7 +10,15 @@ class ApplicationController < ActionController::Base
 
     def signed_in?
         # route[:symbol].notblank?
-        session[:current_email].present?
+        current_email.present?
+    end
+
+    def current_email
+        session[:current_email]
+    end
+    
+    def sign_in_as(email)
+        session[:current_email] = email
     end
 
 end
